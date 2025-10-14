@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 
 if __name__ == "__main__":
     # read a color image
@@ -10,7 +11,18 @@ if __name__ == "__main__":
             if ret == False:
                 print('Video ends')
                 break
-            cv2.imshow('video', frame)
+            frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+            # Canny method for edges detection
+            # argument: image_array, minVal, maxVal
+            # above maxVal: sure-edges, below minVal : non-edges
+            # between maxVal and minVal : depend on the connectivity to sure-edges
+            edges = cv2.Canny(frame, 70, 250)
+            # vis = np.concatenate((frame_gray, edges), axis=1)
+            alpha = 0.5
+            beta = (1.0 - alpha);
+            vis = cv2.addWeighted(frame_gray, alpha, edges, beta, 0.0);
+            cv2.imshow('video', vis)
     else:
         print('Video opening failed')
 
