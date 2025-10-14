@@ -18,10 +18,11 @@ if __name__ == "__main__":
             # above maxVal: sure-edges, below minVal : non-edges
             # between maxVal and minVal : depend on the connectivity to sure-edges
             edges = cv2.Canny(frame, 70, 250)
+            edges_bgr = cv2.cvtColor(edges, cv2.COLOR_GRAY2BGR)
             # vis = np.concatenate((frame_gray, edges), axis=1)
             alpha = 0.5
             beta = (1.0 - alpha);
-            vis = cv2.addWeighted(frame_gray, alpha, edges, beta, 0.0);
+            vis = cv2.addWeighted(frame, alpha, edges_bgr, beta, 0.0);
             cv2.imshow('video', vis)
     else:
         print('Video opening failed')
