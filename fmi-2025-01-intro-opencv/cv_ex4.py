@@ -17,13 +17,25 @@ if __name__ == "__main__":
             # argument: image_array, minVal, maxVal
             # above maxVal: sure-edges, below minVal : non-edges
             # between maxVal and minVal : depend on the connectivity to sure-edges
-            edges = cv2.Canny(frame, 70, 250)
-            edges_bgr = cv2.cvtColor(edges, cv2.COLOR_GRAY2BGR)
+            edges = cv2.Canny(frame, 40, 250)
+
+            # dilation with 7x7 kernel - makes contours wider
+            edges = cv2.dilate(edges, (7, 7) )
+
+            ## show frame and edges side-by-side
             # vis = np.concatenate((frame_gray, edges), axis=1)
-            alpha = 0.5
-            beta = (1.0 - alpha);
-            vis = cv2.addWeighted(frame, alpha, edges_bgr, beta, 0.0);
-            cv2.imshow('video', vis)
+            # vis = np.hstack((frame_gray, edges))
+
+            ## blend frame and edges instead
+            # alpha = 0.5
+            # beta = (1.0 - alpha);
+            # edges_bgr = cv2.cvtColor(edges, cv2.COLOR_GRAY2BGR)
+            # vis = cv2.addWeighted(frame, alpha, edges_bgr, beta, 0.0);
+
+            # draw dilated edges over the frame in green (0, 255, 0)
+            frame[edges==255] = (0, 255, 0)
+
+            cv2.imshow('video', frame)
     else:
         print('Video opening failed')
 
