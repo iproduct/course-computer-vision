@@ -1,23 +1,36 @@
 import cv2
 import numpy as np
 
+def nothing(x):
+    pass
+
 if __name__ == "__main__":
     # read a color image
     # cap = cv2.VideoCapture('test.mp4')
+
+    cv2.namedWindow("video")
+    cv2.createTrackbar("Min", "video", 40, 255, nothing)
+    cv2.createTrackbar("Max", "video", 255, 255, nothing)
+
     cap = cv2.VideoCapture(0)
+
     if cap.isOpened():
-        while(cv2.waitKey(30) != ord('q')):
+        while cv2.waitKey(30) != ord('q'):
             ret, frame = cap.read()
-            if ret == False:
+            if not ret:
                 print('Video ends')
                 break
             frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+            # get min and max thresholds from trackbars
+            minThr = cv2.getTrackbarPos("Min", "video")
+            maxThr = cv2.getTrackbarPos("Max", "video")
 
             # Canny method for edges detection
             # argument: image_array, minVal, maxVal
             # above maxVal: sure-edges, below minVal : non-edges
             # between maxVal and minVal : depend on the connectivity to sure-edges
-            edges = cv2.Canny(frame, 40, 250)
+            edges = cv2.Canny(frame, minThr, maxThr)
 
             # dilation with 7x7 kernel - makes contours wider
             edges = cv2.dilate(edges, (7, 7) )
