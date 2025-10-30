@@ -1,5 +1,7 @@
 import cv2
 import numpy as np
+from numpy.random import laplace
+
 
 def nothing(x):
     pass
@@ -49,7 +51,32 @@ if __name__ == "__main__":
                 [-1,  9, -1],
                 [-1, -1, -1]
             ])
-            sarpened_img = cv2.filter2D(src=frame_gray, ddepth=-1, kernel=sharpen_kernel)
+            emboss_kernel = np.array([
+                [-2, -1, 0],
+                [-1,  1, 1],
+                [ 0,  1, 2]
+            ])
+            sobelx_kernel = np.array([
+                [-1, -2, -1],
+                [0,   0,  0],
+                [1,   2,  1]
+            ])
+            sobely_kernel = np.array([
+                [-1, 0, 1],
+                [2,  0, 2],
+                [-1,  0, 1]
+            ])
+            scharry_kernel = np.array([
+                [-3, 0, 3],
+                [-10,  0, 10],
+                [-3,  0, 3]
+            ])
+            laplace_kernel = np.array([
+                [0, 1, 0],
+                [1, -4, 1],
+                [0,  1, 0]
+            ])
+            sarpened_img = cv2.filter2D(src=frame_gray, ddepth=-1, kernel= sobely_kernel)
             vis = np.hstack((frame_gray, sarpened_img))
             cv2.imshow('video', vis)
     else:
