@@ -31,6 +31,7 @@ if __name__ == "__main__":
             # above maxVal: sure-edges, below minVal : non-edges
             # between maxVal and minVal : depend on the connectivity to sure-edges
             edges = cv2.Canny(frame, minThr, maxThr)
+            # print(edges.shape)
 
             # dilation with 7x7 kernel - makes contours wider
             edges = cv2.dilate(edges, (7, 7) )
@@ -47,6 +48,7 @@ if __name__ == "__main__":
 
             # draw dilated edges over the frame in green (0, 255, 0)
             frame[edges==255] = (0, 255, 0)
+            # print(frame.shape)
 
             cv2.imshow('video', frame)
     else:
