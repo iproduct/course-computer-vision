@@ -42,9 +42,15 @@ if __name__ == "__main__":
             # identity_kernel = np.array([[0,0,0], [0,1,0], [0,0,0]])
             # identity_img = cv2.filter2D(src = frame_gray, ddepth=-1, kernel=identity_kernel)
             # gausian_blur = cv2.GaussianBlur(frame_gray, (11, 11), sigmaX = 16, sigmaY = 16)
-            noisy_frame = add_salt_and_pepper_noise(frame)
-            median_blur = cv2.medianBlur(noisy_frame, ksize=3)
-            vis = np.hstack((noisy_frame, median_blur))
+            # noisy_frame = add_salt_and_pepper_noise(frame)
+            # median_blur = cv2.medianBlur(noisy_frame, ksize=3)
+            sharpen_kernel = np.array([
+                [-1, -1, -1],
+                [-1,  9, -1],
+                [-1, -1, -1]
+            ])
+            sarpened_img = cv2.filter2D(src=frame_gray, ddepth=-1, kernel=sharpen_kernel)
+            vis = np.hstack((frame_gray, sarpened_img))
             cv2.imshow('video', vis)
     else:
         print('Video opening failed')
