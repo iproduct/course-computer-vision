@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e3c68e7-b801-4a07-9e19-899fa7cebeb2" name="Changes" comment="ML demos and data added">
-      <change beforePath="$PROJECT_DIR$/pandas_intro_linear_regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/pandas_intro_linear_regression.ipynb" afterDir="false" />
+    <list default="true" id="4e3c68e7-b801-4a07-9e19-899fa7cebeb2" name="Changes" comment="small changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,30 +35,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.01_seaborn.executor": "Run",
-    "Python.02_hist_matplotlib.executor": "Run",
-    "Python.ex_02_matplotlib_hist.executor": "Run",
-    "Python.pandas-intro.executor": "Run",
-    "Python.seaborn_demo_02.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/CourseCV/git/course-computer-vision/fmi-2025-02-ml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.01_seaborn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.02_hist_matplotlib.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex_02_matplotlib_hist.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pandas-intro.executor&quot;: &quot;Run&quot;,
+    &quot;Python.seaborn_demo_02.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CourseCV/git/course-computer-vision/fmi-2025-02-ml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CourseCV\git\course-computer-vision\fmi-2025-02-ml" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pandas-intro">
+  <component name="RunManager" selected="Python.01_seaborn">
     <configuration name="01_seaborn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fmi-2025-02-ml" />
       <option name="ENV_FILES" value="" />
@@ -176,8 +176,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.pandas-intro" />
         <item itemvalue="Python.01_seaborn" />
+        <item itemvalue="Python.pandas-intro" />
         <item itemvalue="Python.02_hist_matplotlib" />
         <item itemvalue="Python.ex_02_matplotlib_hist" />
         <item itemvalue="Python.seaborn_demo_02" />
@@ -202,6 +202,8 @@
       <updated>1762601988462</updated>
       <workItem from="1762601989848" duration="1056000" />
       <workItem from="1763057102482" duration="4774000" />
+      <workItem from="1763065437700" duration="31000" />
+      <workItem from="1763117697478" duration="401000" />
     </task>
     <task id="LOCAL-00001" summary="ML demos initial commit">
       <option name="closed" value="true" />
@@ -219,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763057320246</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="small changes">
+      <option name="closed" value="true" />
+      <created>1763065461623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763065461623</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,13 +238,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ML demos initial commit" />
     <MESSAGE value="ML demos and data added" />
-    <option name="LAST_COMMIT_MESSAGE" value="ML demos and data added" />
+    <MESSAGE value="small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$ex_02_matplotlib_hist.coverage" NAME="ex_02_matplotlib_hist Coverage Results" MODIFIED="1763060701417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$02_hist_matplotlib.coverage" NAME="02_hist_matplotlib Coverage Results" MODIFIED="1763060880338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$pandas_intro.coverage" NAME="pandas-intro Coverage Results" MODIFIED="1763061706633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$seaborn_demo_02.coverage" NAME="seaborn_demo_02 Coverage Results" MODIFIED="1762602445186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fmi_2025_02_ml$01_seaborn.coverage" NAME="01_seaborn Coverage Results" MODIFIED="1763060974205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fmi_2025_02_ml$01_seaborn.coverage" NAME="01_seaborn Coverage Results" MODIFIED="1763117992961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
