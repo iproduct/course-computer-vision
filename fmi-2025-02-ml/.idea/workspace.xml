@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e3c68e7-b801-4a07-9e19-899fa7cebeb2" name="Changes" comment="demos added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4e3c68e7-b801-4a07-9e19-899fa7cebeb2" name="Changes" comment="requrements deps updated">
+      <change beforePath="$PROJECT_DIR$/decision_tree_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/decision_tree_simple.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +47,7 @@
   "keyToString": {
     "Python.01_seaborn.executor": "Run",
     "Python.02_hist_matplotlib.executor": "Run",
+    "Python.classifiers_comparison.executor": "Run",
     "Python.decision_tree_simple.executor": "Run",
     "Python.ex_02_matplotlib_hist.executor": "Run",
     "Python.ga_cont_opt.executor": "Run",
@@ -77,7 +78,30 @@
       <recent name="D:\CourseCV\git\course-computer-vision\fmi-2025-02-ml" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.decision_tree_simple">
+  <component name="RunManager" selected="Python.classifiers_comparison">
+    <configuration name="classifiers_comparison" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fmi-2025-02-ml" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifiers_comparison.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="decision_tree_simple" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fmi-2025-02-ml" />
       <option name="ENV_FILES" value="" />
@@ -93,29 +117,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/decision_tree_simple.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ga_cont_opt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="fmi-2025-02-ml" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ga_cont_opt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.classifiers_comparison" />
         <item itemvalue="Python.decision_tree_simple" />
         <item itemvalue="Python.hyperopt_ex_tpe" />
         <item itemvalue="Python.gradient_boosting" />
         <item itemvalue="Python.ga_discrete_opt_salesperson" />
-        <item itemvalue="Python.ga_cont_opt" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +228,7 @@
       <workItem from="1763734137052" duration="2009000" />
       <workItem from="1763812882706" duration="613000" />
       <workItem from="1764256327284" duration="3299000" />
-      <workItem from="1764262984535" duration="538000" />
+      <workItem from="1764262984535" duration="1810000" />
     </task>
     <task id="LOCAL-00001" summary="ML demos initial commit">
       <option name="closed" value="true" />
@@ -277,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764263209822</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="requrements deps updated">
+      <option name="closed" value="true" />
+      <created>1764263554252</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764263554252</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,11 +298,13 @@
     <MESSAGE value="small changes" />
     <MESSAGE value="examples added" />
     <MESSAGE value="demos added" />
-    <option name="LAST_COMMIT_MESSAGE" value="demos added" />
+    <MESSAGE value="requrements deps updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="requrements deps updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$02_hist_matplotlib.coverage" NAME="02_hist_matplotlib Coverage Results" MODIFIED="1763060880338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$pandas_intro.coverage" NAME="pandas-intro Coverage Results" MODIFIED="1763061706633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fmi_2025_02_ml$classifiers_comparison.coverage" NAME="classifiers_comparison Coverage Results" MODIFIED="1764265158790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$mlp_regularization_param.coverage" NAME="mlp_regularization_param Coverage Results" MODIFIED="1763666680774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$gradient_boosting.coverage" NAME="gradient_boosting Coverage Results" MODIFIED="1764257521215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$01_seaborn.coverage" NAME="01_seaborn Coverage Results" MODIFIED="1763663883340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -307,6 +318,6 @@
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$seaborn_demo_02.coverage" NAME="seaborn_demo_02 Coverage Results" MODIFIED="1762602445186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$ga_cont_opt.coverage" NAME="ga_cont_opt Coverage Results" MODIFIED="1763735449193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fmi_2025_02_ml$ga_discrete_opt_salesperson.coverage" NAME="ga_discrete_opt_salesperson Coverage Results" MODIFIED="1763736129631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fmi_2025_02_ml$decision_tree_simple.coverage" NAME="decision_tree_simple Coverage Results" MODIFIED="1764263325102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fmi_2025_02_ml$decision_tree_simple.coverage" NAME="decision_tree_simple Coverage Results" MODIFIED="1764263761890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -5,3 +5,4 @@ numpy~=2.3.4
 scikit-learn~=1.7.2
 polars~=1.35.2
 hyperopt~=0.2.7
+mlxtend~=0.23.4
