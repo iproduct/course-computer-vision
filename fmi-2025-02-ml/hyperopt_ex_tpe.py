@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 
 # Load data
 X, y = load_iris(return_X_y=True)
+print(X.shape)
 
 # Define objective function
 def objective(params):
