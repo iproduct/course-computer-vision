@@ -1,7 +1,7 @@
 import  matplotlib.pyplot as plt
 import tensorflow as tf
 import keras
-from keras.api.datasets import fashion_mnist, mnist
+from keras.datasets import fashion_mnist, mnist
 
 
 def create_ann():
