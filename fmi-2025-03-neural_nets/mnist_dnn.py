@@ -1,7 +1,9 @@
+# import os
+# os.environ['KERAS_BACKEND'] = 'theano'
 from keras import layers
 from keras import models
-from keras.api.datasets import mnist
-from keras.api.utils import to_categorical
+from keras.datasets import mnist
+from keras.utils import to_categorical
 import tensorflow as tf
 import os
 import contextlib
