@@ -39,7 +39,7 @@ if __name__ == '__main__':
     optimizer = tf.keras.optimizers.Adam()
 
     # Prepare a loss function.
-    loss_fn = tf.keras.losses.kl_divergence
+    loss_fn = tf.keras.losses.KLDivergence
     # loss_object = tf.keras.losses.MeanSquaredError()
 
 
