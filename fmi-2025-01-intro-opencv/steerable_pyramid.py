@@ -29,5 +29,5 @@ print(f"Reconstruction Mean Squared Error: {error:.2e}")
 # 6. Optional: Visualize a specific oriented subband
 # Visualizes the first scale, second orientation (0-indexed)
 plt.title("Scale 0, Orientation 1")
-pt.imshow(pyr.pyr_coeffs[(0, 1)])
+plt.imshow(pyr.pyr_coeffs[(4, 2)])
 plt.show()

@@ -1,4 +1,5 @@
 import cv2
+import matplotlib.pyplot as plt
 import numpy as np
 
 def pyramid_blend(img1, img2, levels=6):
@@ -8,6 +9,10 @@ def pyramid_blend(img1, img2, levels=6):
     for i in range(levels):
         gp1.append(cv2.pyrDown(gp1[-1]))
         gp2.append(cv2.pyrDown(gp2[-1]))
+    # temp = gp1[5].copy()
+    # temp.resize(256, 256)
+    # cv2.imshow('gp5 ', temp)
+
 
     # 2. Generate Laplacian Pyramids
     lp1 = [gp1[levels]]
@@ -15,6 +20,7 @@ def pyramid_blend(img1, img2, levels=6):
     for i in range(levels, 0, -1):
         # Expand lower level and subtract from higher level
         size = (gp1[i-1].shape[1], gp1[i-1].shape[0])
+        # print(size)
         ge1 = cv2.pyrUp(gp1[i], dstsize=size)
         ge2 = cv2.pyrUp(gp2[i], dstsize=size)
         lp1.append(cv2.subtract(gp1[i-1], ge1))
@@ -32,6 +38,8 @@ def pyramid_blend(img1, img2, levels=6):
     reconstructed = blended_pyr[0]
     for i in range(1, levels + 1):
         size = (blended_pyr[i].shape[1], blended_pyr[i].shape[0])
+        print(size,  blended_pyr[i].shape)
+        # cv2.imshow('level '+ str(i), reconstructed)
         reconstructed = cv2.pyrUp(reconstructed, dstsize=size)
         reconstructed = cv2.add(reconstructed, blended_pyr[i])
 

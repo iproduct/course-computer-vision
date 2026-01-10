@@ -6,6 +6,9 @@ from PIL import Image
 # 1. Setup and Decomposition
 # Generate/Load a test image (e.g., a disk or chirp to see orientation clearly)
 img = pt.synthetic_images.disk(size=256)
+print(img.shape)
+plt.imshow(img)
+plt.show()
 pyr = pt.pyramids.SteerablePyramidSpace(img, height=3, order=3)
 # pyr = pt.pyramids.SteerablePyramidFreq(img, height=3, order=3)
 
