@@ -32,6 +32,6 @@ for fname in images:
         # Draw and display the corners
         cv.drawChessboardCorners(img, (7,6), corners2, ret)
         cv.imshow('img', img)
-        cv.waitKey(500)
+        cv.waitKey(1000)
 
 cv.destroyAllWindows()
