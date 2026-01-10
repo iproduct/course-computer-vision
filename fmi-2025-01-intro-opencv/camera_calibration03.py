@@ -49,6 +49,7 @@ print("distortion coefficients: ", dist_coefs.ravel())
 img = cv.imread('data/left12.jpg')
 h,  w = img.shape[:2]
 newcameramtx, roi = cv.getOptimalNewCameraMatrix(camera_matrix, dist_coefs, (w,h), 1, (w,h))
+print("new camera matrix:\n", newcameramtx)
 
 # undistort
 mapx, mapy = cv.initUndistortRectifyMap(camera_matrix, dist_coefs, None, newcameramtx, (w, h), 5)

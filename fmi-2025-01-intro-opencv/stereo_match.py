@@ -40,17 +40,33 @@ def main():
 
     # disparity range is tuned for 'aloe' image pair
     window_size = 3
+    # Matched block size. It must be an odd number >=1 . Normally, it should be somewhere in the 3..11 range.
+    block_size = 16
     min_disp = 16
-    num_disp = 112-min_disp
+    max_disp = 112
+    # Maximum disparity minus minimum disparity. The value is always greater than zero.
+    # In the current implementation, this parameter must be divisible by 16.
+    num_disp = max_disp - min_disp
+    # Margin in percentage by which the best (minimum) computed cost function value should "win" the second best value to consider the found match correct.
+    # Normally, a value within the 5-15 range is good enough
+    uniquenessRatio = 10
+    # Maximum size of smooth disparity regions to consider their noise speckles and invalidate.
+    # Set it to 0 to disable speckle filtering. Otherwise, set it somewhere in the 50-200 range.
+    speckleWindowSize = 100
+    speckleRange = 32
+    # Maximum disparity variation within each connected component.
+    # If you do speckle filtering, set the parameter to a positive value, it will be implicitly multiplied by 16.
+    # Normally, 1 or 2 is good enough.
+    disp12MaxDiff = 1
     stereo = cv.StereoSGBM_create(minDisparity = min_disp,
         numDisparities = num_disp,
-        blockSize = 16,
+        blockSize = block_size,
         P1 = 8*3*window_size**2,
         P2 = 32*3*window_size**2,
-        disp12MaxDiff = 1,
-        uniquenessRatio = 10,
-        speckleWindowSize = 100,
-        speckleRange = 32
+        disp12MaxDiff = disp12MaxDiff,
+        uniquenessRatio = uniquenessRatio,
+        speckleWindowSize = speckleWindowSize,
+        speckleRange = speckleRange
     )
 
     print('computing disparity...')

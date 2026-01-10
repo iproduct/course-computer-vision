@@ -51,6 +51,7 @@ print("tvecs: ", tvecs)
 img = cv.imread('data/left12.jpg')
 h,  w = img.shape[:2]
 newcameramtx, roi = cv.getOptimalNewCameraMatrix(camera_matrix, dist_coefs, (w, h), 1, (w, h))
+print("new camera matrix:\n", newcameramtx)
 
 # undistort
 dst = cv.undistort(img, camera_matrix, dist_coefs, None, newcameramtx)
