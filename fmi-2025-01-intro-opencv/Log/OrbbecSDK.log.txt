@@ -1,0 +1,90 @@
+[08/13 10:50:14.329166][info][21616][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[08/13 10:50:14.361375][warning][21616][UsbEnumeratorLibusb.cpp:398] Failed to open USB device: error=Entity not found. Try again
+[08/13 10:50:14.421091][warning][21616][UsbEnumeratorLibusb.cpp:407] Failed to open USB device (Entity not found), skipping, info.serial and infName may be empty
+[08/13 10:50:14.422300][info][21616][DeviceManager.cpp:25] Current found device(s): (1)
+[08/13 10:50:14.422319][info][21616][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 10:50:14.422325][info][21616][DeviceManager.cpp:463] Enable net device enumeration: true
+[08/13 10:50:15.464984][info][21616][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/13 10:50:15.465025][info][21616][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 10:50:15.684648][error][21616][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 10:50:15.789728][error][21616][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 10:50:15.899254][warning][21616][ObException.cpp:32] A unrecoverable_exception has occurred!
+ - where: Protocol.cpp(66)
+ - msg: Request failed, statusCode: 8, msg: Device response size(0) < response header size(10), propertyId: 1000
+ - type: IO
+ - status: 1004
+[08/13 10:50:33.803785][info][10084][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[08/13 10:50:33.837127][warning][10084][UsbEnumeratorLibusb.cpp:398] Failed to open USB device: error=Entity not found. Try again
+[08/13 10:50:33.891604][warning][10084][UsbEnumeratorLibusb.cpp:407] Failed to open USB device (Entity not found), skipping, info.serial and infName may be empty
+[08/13 10:50:33.892611][info][10084][DeviceManager.cpp:25] Current found device(s): (1)
+[08/13 10:50:33.892631][info][10084][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 10:50:33.892636][info][10084][DeviceManager.cpp:463] Enable net device enumeration: true
+[08/13 10:50:34.911794][info][10084][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/13 10:50:34.911816][info][10084][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 10:50:35.041163][error][10084][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 10:50:35.144649][error][10084][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 10:50:35.253701][warning][10084][ObException.cpp:32] A unrecoverable_exception has occurred!
+ - where: Protocol.cpp(66)
+ - msg: Request failed, statusCode: 8, msg: Device response size(0) < response header size(10), propertyId: 1000
+ - type: IO
+ - status: 1004
+[08/13 10:57:36.283174][info][28348][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[08/13 10:57:36.315891][warning][28348][UsbEnumeratorLibusb.cpp:398] Failed to open USB device: error=Entity not found. Try again
+[08/13 10:57:36.369294][warning][28348][UsbEnumeratorLibusb.cpp:407] Failed to open USB device (Entity not found), skipping, info.serial and infName may be empty
+[08/13 10:57:36.370454][info][28348][DeviceManager.cpp:25] Current found device(s): (1)
+[08/13 10:57:36.370474][info][28348][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 10:57:36.370479][info][28348][DeviceManager.cpp:463] Enable net device enumeration: true
+[08/13 10:57:37.388045][info][28348][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/13 10:57:37.388067][info][28348][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 10:57:37.517721][error][28348][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 10:57:37.621894][error][28348][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 10:57:37.731227][warning][28348][ObException.cpp:32] A unrecoverable_exception has occurred!
+ - where: Protocol.cpp(66)
+ - msg: Request failed, statusCode: 8, msg: Device response size(0) < response header size(10), propertyId: 1000
+ - type: IO
+ - status: 1004
+[08/13 11:06:15.120866][info][32040][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[08/13 11:06:15.157534][warning][32040][UsbEnumeratorLibusb.cpp:398] Failed to open USB device: error=Entity not found. Try again
+[08/13 11:06:15.218675][warning][32040][UsbEnumeratorLibusb.cpp:407] Failed to open USB device (Entity not found), skipping, info.serial and infName may be empty
+[08/13 11:06:15.219734][info][32040][DeviceManager.cpp:25] Current found device(s): (1)
+[08/13 11:06:15.219754][info][32040][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 11:06:15.219758][info][32040][DeviceManager.cpp:463] Enable net device enumeration: true
+[08/13 11:06:16.236957][info][32040][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/13 11:06:16.236978][info][32040][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 11:06:16.441716][error][32040][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 11:06:16.548539][error][32040][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 11:06:16.657994][warning][32040][ObException.cpp:32] A unrecoverable_exception has occurred!
+ - where: Protocol.cpp(66)
+ - msg: Request failed, statusCode: 8, msg: Device response size(0) < response header size(10), propertyId: 1000
+ - type: IO
+ - status: 1004
+[08/13 11:08:58.448391][info][25652][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[08/13 11:08:58.480601][warning][25652][UsbEnumeratorLibusb.cpp:398] Failed to open USB device: error=Entity not found. Try again
+[08/13 11:08:58.545787][warning][25652][UsbEnumeratorLibusb.cpp:407] Failed to open USB device (Entity not found), skipping, info.serial and infName may be empty
+[08/13 11:08:58.546857][info][25652][DeviceManager.cpp:25] Current found device(s): (1)
+[08/13 11:08:58.546877][info][25652][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 11:08:58.546882][info][25652][DeviceManager.cpp:463] Enable net device enumeration: true
+[08/13 11:08:59.574347][info][25652][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/13 11:08:59.574368][info][25652][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 11:08:59.777511][error][25652][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 11:08:59.883419][error][25652][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 11:08:59.990973][warning][25652][ObException.cpp:32] A unrecoverable_exception has occurred!
+ - where: Protocol.cpp(66)
+ - msg: Request failed, statusCode: 8, msg: Device response size(0) < response header size(10), propertyId: 1000
+ - type: IO
+ - status: 1004
+[08/13 11:12:50.467702][info][18684][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[08/13 11:12:50.501820][warning][18684][UsbEnumeratorLibusb.cpp:398] Failed to open USB device: error=Entity not found. Try again
+[08/13 11:12:50.557787][warning][18684][UsbEnumeratorLibusb.cpp:407] Failed to open USB device (Entity not found), skipping, info.serial and infName may be empty
+[08/13 11:12:50.558751][info][18684][DeviceManager.cpp:25] Current found device(s): (1)
+[08/13 11:12:50.558769][info][18684][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 11:12:50.558773][info][18684][DeviceManager.cpp:463] Enable net device enumeration: true
+[08/13 11:12:51.601250][info][18684][DeviceManager.cpp:25] Current device(s) list: (1)
+[08/13 11:12:51.601272][info][18684][DeviceManager.cpp:34] 	- Name: Bootloader device, PID: 0x0501, SN/ID: , Connection: USB2.0
+[08/13 11:12:51.809246][error][18684][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 11:12:51.912643][error][18684][WmfUvcDevicePort.cpp:437] setXu failed!
+[08/13 11:12:52.022141][warning][18684][ObException.cpp:32] A unrecoverable_exception has occurred!
+ - where: Protocol.cpp(66)
+ - msg: Request failed, statusCode: 8, msg: Device response size(0) < response header size(10), propertyId: 1000
+ - type: IO
+ - status: 1004
