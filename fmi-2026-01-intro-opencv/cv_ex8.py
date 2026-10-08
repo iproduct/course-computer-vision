@@ -87,7 +87,7 @@ if __name__ == "__main__":
         # imshow
         cv2.imshow('Matched Features',imgCom)
 
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if cv2.waitKey(1000) & 0xFF == ord('q'):
             break
 
     cap.release()
