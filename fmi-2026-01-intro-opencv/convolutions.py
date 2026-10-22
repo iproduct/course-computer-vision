@@ -41,6 +41,7 @@ if __name__ == "__main__":
                 print('Video ends')
                 break
             frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            avg_blur = np.ones((11, 11), np.float32) / 121
             # identity_kernel = np.array([[0,0,0], [0,1,0], [0,0,0]])
             # identity_img = cv2.filter2D(src = frame_gray, ddepth=-1, kernel=identity_kernel)
             # gausian_blur = cv2.GaussianBlur(frame_gray, (11, 11), sigmaX = 16, sigmaY = 16)
